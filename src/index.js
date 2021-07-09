@@ -36,3 +36,8 @@ link.innerHTML = "Le Wagon <strong>rocks</strong>";
 console.log(link.innerHTML);
 link.attributes.href.value = "https://www.lewagon.com/berlin";
 console.log(link.attributes.href.value);
+
+// use HTMLElement.dataset
+const boris = document.getElementById('user');
+console.log(boris.dataset.uid);
+console.log(boris.dataset.githubNickname);
