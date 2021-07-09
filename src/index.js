@@ -38,6 +38,15 @@ link.attributes.href.value = "https://www.lewagon.com/berlin";
 console.log(link.attributes.href.value);
 
 // use HTMLElement.dataset
-const boris = document.getElementById('user');
-console.log(boris.dataset.uid);
-console.log(boris.dataset.githubNickname);
+const francisco = document.getElementById('user');
+console.log(francisco.dataset.uid);
+console.log(francisco.dataset.githubNickname);
+
+// EventListener
+const images = document.querySelectorAll(".profile");
+
+images.forEach((img) => {
+  img.addEventListener("click", (event) => {
+    event.currentTarget.classList.toggle("img-circle");
+  });
+});
