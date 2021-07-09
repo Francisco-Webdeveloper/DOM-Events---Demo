@@ -1,1 +1,4 @@
-console.log("Hello from src/index.js!");
+const list = document.querySelector("#players");
+
+list.insertAdjacentHTML("beforeend", "<li>Luke</li>");
+list.insertAdjacentHTML("beforeend", "<li>Anakin</li>");
