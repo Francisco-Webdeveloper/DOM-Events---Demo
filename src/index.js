@@ -26,3 +26,13 @@ const emailInput = document.querySelector("#email");
 console.log(emailInput.value);
 // Write
 emailInput.value = "francisco@gmail.com";
+
+// getting innerText / innerHTML
+const link = document.getElementById("home");
+console.log(link.innerText);
+console.log(link.innerHTML);
+console.log(link.attributes.href.value);
+link.innerHTML = "Le Wagon <strong>rocks</strong>";
+console.log(link.innerHTML);
+link.attributes.href.value = "https://www.lewagon.com/berlin";
+console.log(link.attributes.href.value);
