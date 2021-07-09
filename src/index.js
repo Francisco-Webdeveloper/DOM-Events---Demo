@@ -12,4 +12,8 @@ winners.forEach((winner) => {
 });
 
 const listWinners = document.getElementById("fifa-wins");
-listWinners.insertAdjacentHTML("beforeend", "<li>France (2 wins)</li>");
+
+setTimeout(() => {
+  listWinners.insertAdjacentHTML("beforeend", "<li>France (2 wins)</li>");
+  listWinners.classList.add("red");
+}, 3000)
