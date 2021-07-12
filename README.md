@@ -45,6 +45,21 @@ Selecting several elements:
 ```bash
 document.querySelectorAll(CSS_SELECTOR);
 ```
+Style:
+Use HTMLElement.style
+```bash
+const element = document.querySelector(CSS_SELECTOR);
+
+// assigning background color
+element.style.backgroundColor = "red";
+
+// Hide
+element.style.display = "none";
+
+// Show
+element.style.display = "";
+```
+
 Add / Remove a Class:
 Use classlist
 ```bash
